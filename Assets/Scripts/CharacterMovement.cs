@@ -3,24 +3,28 @@ using UnityEngine.InputSystem;
 
 public class CharacterMovement : MonoBehaviour
 {
-    private Vector2 _movement2D;
+    public float moveSpeed = 5f;
 
-    public void OnMove(InputValue value)
-    {
-        
-    }
+    private Rigidbody rb;
+    private Vector2 moveInput;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();       
+        rb.freezeRotation = true;
     }
 
-    // Update is called once per frame
-    void Update()
-    {   
-        Vector2 right = Vector2.right;
-        Vector2 left = Vector2.left;
-        
+    void FixedUpdate()
+    {
+        Vector3 moveDirection = new Vector3(moveInput.x, 0f, moveInput.y); 
+        rb.linearVelocity = moveDirection * moveSpeed;
+
+        Debug.DrawRay(transform.position, moveDirection * 2f, Color.green);
+
+    }
+
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        moveInput = context.ReadValue<Vector2>();
     }
 }
