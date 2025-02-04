@@ -15,9 +15,11 @@ GameObject:
   - component: {fileID: 4777062968599542745}
   - component: {fileID: 8899711499435295933}
   - component: {fileID: 2401247633208411968}
+  - component: {fileID: -1872449100037996703}
+  - component: {fileID: 3953488068466518579}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -256,7 +258,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &2401247633208411968
 MonoBehaviour:
@@ -271,3 +273,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  rotationSpeed: 10
+--- !u!114 &-1872449100037996703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4071620163790857230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffdc27361e7673c428267febe6e825ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7073536492844842017, guid: 3d4cdf9f831f8e44390b9295c4c44d21, type: 3}
+  shootPoint: {fileID: 0}
+  shootRange: 100
+--- !u!114 &3953488068466518579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4071620163790857230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d45be54e1117d1428db2d31b6bc0f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

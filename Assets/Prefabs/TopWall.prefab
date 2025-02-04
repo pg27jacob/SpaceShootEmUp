@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3760015311532854671}
   - component: {fileID: 739319353182325761}
+  - component: {fileID: 4503140388640429172}
   m_Layer: 0
   m_Name: TopWall
   m_TagString: Untagged
@@ -53,3 +54,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4503140388640429172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4049410326015868380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6471ae42d5684a8419d71e2f9ea0bb9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 8963719819661371273, guid: e5dc065b5bfa8364fa6b04742b654d95, type: 3}
+  spawnInterval: 2
+  spawnXRange: 8
+  enemySpeed: 5
